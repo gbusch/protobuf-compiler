@@ -1,6 +1,8 @@
 # protobuf-compiler
 Dockerized protobuf compiler for Arduino and python
 
+![Docker](https://github.com/gbusch/protobuf-compiler/workflows/Docker/badge.svg?branch=master)
+
 Example usecase: Measure weather data with a sensor attached to an ESP32 which transmits the data via MQTT (encoded in __protobuf__ format) to a Raspberry Pi. On the Raspberry Pi, the data is decoded by a python-script and saved in a database.
 
 Proper configuration of protoc (https://developers.google.com/protocol-buffers) and nanopb (https://jpa.kapsi.fi/nanopb/) turned out to be quite messy. Especially, since my Mac refused to execute the pre-compiled nanopb. Dockerizing the compilers makes this task much easier and increases reproducability.
